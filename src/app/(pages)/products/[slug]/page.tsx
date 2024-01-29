@@ -28,7 +28,7 @@ export default async function Product({ params: { slug } }) {
     })
   } catch (error) {
     // eslint-disable-line no-console
-    console.error(error) 
+    console.error(error)
   }
 
   if (!product) {
@@ -39,9 +39,8 @@ export default async function Product({ params: { slug } }) {
 
   return (
     <>
-      <ProductHero product={product} />      
+      <ProductHero product={product} />
       {product?.enablePaywall && <PaywallBlocks productSlug={slug as string} disableTopPadding />}
-      
       <Blocks
         disableTopPadding
         blocks={[
