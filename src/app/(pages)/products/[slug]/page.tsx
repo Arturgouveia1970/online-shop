@@ -27,7 +27,8 @@ export default async function Product({ params: { slug } }) {
       draft: isDraftMode,
     })
   } catch (error) {
-    console.error(error) // eslint-disable-line no-console
+    // eslint-disable-line no-console
+    console.error(error) 
   }
 
   if (!product) {
@@ -40,6 +41,7 @@ export default async function Product({ params: { slug } }) {
     <>
       <ProductHero product={product} />      
       {product?.enablePaywall && <PaywallBlocks productSlug={slug as string} disableTopPadding />}
+      
       <Blocks
         disableTopPadding
         blocks={[
