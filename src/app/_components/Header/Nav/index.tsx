@@ -1,13 +1,10 @@
 'use client'
-
 import React from 'react'
 import Link from 'next/link'
-
 import { Header as HeaderType } from '../../../../payload/payload-types'
 import { useAuth } from '../../../_providers/Auth'
 import { CartLink } from '../../CartLink'
 import { CMSLink } from '../../Link'
-
 import classes from './index.module.scss'
 import { Button } from '../../Button'
 

@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-
 import classes from './index.module.scss'
 import Link from 'next/link'
 import { Category, Media } from '../../../../payload/payload-types'
@@ -17,11 +16,11 @@ const  CategoryCard = ({ category }: CategoryCardProps) => {
 
   return (
    <Link
-   href="/products"
-   className={classes.card}
-   style={{ backgroundImage: `url(${media.url})` }}
-   onClick={() => setCategoryFilters([category.id])}
-  >
+    href="/products"
+    className={classes.card}
+    style={{ backgroundImage: `url(${media.url})` }}
+    onClick={() => setCategoryFilters([category.id])}
+    >
     <p className={classes.title}>{category.title}</p>
    </Link>
   )
