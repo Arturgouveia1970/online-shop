@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+
 import type { Payload } from 'payload'
 
 import { cartPage } from './cart-page'
